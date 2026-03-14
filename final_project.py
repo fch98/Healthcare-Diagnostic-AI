@@ -1,23 +1,23 @@
 import streamlit as st
 import pandas as pd
 import os
-import re
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder
 
 # --- PAGE CONFIG ---
 st.set_page_config(page_title="Advanced Healthcare AI", page_icon="🩺", layout="wide")
 
-# --- PATHS ---
-base_path = r"C:\Users\farah\OneDrive\Desktop\Masters in data science\Natural Learning Processing\Labs\Final Project\data"
+# --- RELATIVE PATH LOGIC ---
+# This looks at where this file is (notebook2), goes up one level, and finds the 'data' folder.
+# This is the "secret ingredient" for making it work on the web.
+base_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
 
 @st.cache_resource
 def load_and_train():
-    # 1. Load the 4 healthcare files using your EXACT uploaded filenames
+    # 1. Load the 4 healthcare files from the data folder
     df = pd.read_csv(os.path.join(base_path, "realistic_healthcare_symptom_dataset.csv"))
-    # Note: These files contain symptom data, but we use them as the primary lookup
-    desc_df = pd.read_csv(os.path.join(base_path, "new_symptom_description.csv"))
-    prec_df = pd.read_csv(os.path.join(base_path, "new_symptom_precaution.csv"))
+    desc_df = pd.read_csv(os.path.join(base_path, "disease_info.csv"))
+    prec_df = pd.read_csv(os.path.join(base_path, "disease_precaution.csv"))
     severity_df = pd.read_csv(os.path.join(base_path, "new_symptom_severity.csv"))
     
     # 2. Prepare Training Data
@@ -33,27 +33,30 @@ def load_and_train():
     
     return model, le, X.columns.tolist(), desc_df, prec_df, severity_df
 
-# --- INITIALIZE ---
+# --- INITIALIZE ENGINE ---
 try:
     model, le, symptom_cols, desc_df, prec_df, severity_df = load_and_train()
     st.sidebar.success("✅ Healthcare Engine Ready")
 except Exception as e:
-    st.error(f"Setup Error: {e}. Check if file names match exactly in the folder.")
+    st.error(f"Setup Error: {e}. Please check your 'data' folder path.")
     st.stop()
 
 # --- SIDEBAR GLOSSARY ---
 with st.sidebar:
     st.title("📚 Symptom Glossary")
+    st.markdown("Words the AI recognizes:")
     search = st.text_input("Search:", placeholder="e.g. fever")
     clean_display = sorted([s.replace('_', ' ') for s in symptom_cols])
     if search:
         st.write([s for s in clean_display if search.lower() in s])
     else:
-        st.write(clean_display[:50])
+        st.write(clean_display[:30] + ["...and more"])
 
 # --- MAIN UI ---
 st.title("🩺 Advanced Clinical Diagnostic AI")
-user_input = st.text_area("How are you feeling?", height=150, placeholder="Example: I have a sore throat and fever.")
+st.markdown("### Describe your symptoms in natural language")
+
+user_input = st.text_area("How are you feeling today?", height=150, placeholder="Example: I have a persistent cough, sore throat, and a high fever.")
 
 if st.button("Analyze Now"):
     if user_input:
@@ -70,10 +73,10 @@ if st.button("Analyze Now"):
                 input_vector[i] = 1
                 found_symptoms.append(col)
                 
-                # Severity lookup
-                sev_score = severity_df[severity_df['Symptom'].str.strip() == col.strip()]['Severity_Score'].values
-                if len(sev_score) > 0:
-                    total_severity += sev_score[0]
+                # Severity Calculation
+                sev_match = severity_df[severity_df['Symptom'].str.strip() == col.strip()]['Severity_Score'].values
+                if len(sev_match) > 0:
+                    total_severity += sev_match[0]
 
         if found_symptoms:
             # 2. PREDICTION
@@ -83,9 +86,11 @@ if st.button("Analyze Now"):
             
             st.divider()
             
-            # Severity Warning
-            if total_severity > 7:
-                st.error("🚨 **High Severity Warning:** Consult a doctor immediately.")
+            # Severity Flagging
+            if total_severity > 10:
+                st.error("🚨 **High Severity Warning:** These symptoms may require urgent medical attention. Please consult a professional immediately.")
+            elif total_severity > 5:
+                st.warning("⚠️ **Moderate Severity:** Consider scheduling a doctor's visit soon.")
             
             col1, col2 = st.columns(2)
             
@@ -93,28 +98,30 @@ if st.button("Analyze Now"):
                 st.header(f"Likely Condition: {prediction}")
                 st.write(f"**AI Confidence Score:** {max_prob*100:.1f}%")
                 
-                # FIX: Look up info based on the first detected symptom since your CSVs are symptom-based
-                main_symptom = found_symptoms[0]
-                desc_match = desc_df[desc_df['Symptom'].str.strip() == main_symptom.strip()]
-                
+                # DISEASE DESCRIPTION LOOKUP
+                # Matches predicted disease to the disease_info.csv
+                desc_match = desc_df[desc_df['Disease'].str.strip().str.lower() == prediction.lower().strip()]
                 if not desc_match.empty:
-                    st.info(f"**About your primary symptom ({main_symptom.replace('_',' ')}):**\n\n{desc_match['Description'].values[0]}")
+                    st.info(f"**About this condition:**\n\n{desc_match['Description'].values[0]}")
                 else:
-                    st.info(f"Analysis complete for {prediction}. Please monitor your symptoms.")
+                    st.info("Additional clinical data for this condition is currently being integrated.")
 
             with col2:
-                # FIX: Precaution Lookup based on detected symptoms
-                prec_match = prec_df[prec_df['Symptom'].str.strip() == main_symptom.strip()]
+                # PRECAUTION LOOKUP
+                # Matches predicted disease to the disease_precaution.csv
+                prec_match = prec_df[prec_df['Disease'].str.strip().str.lower() == prediction.lower().strip()]
                 if not prec_match.empty:
-                    st.subheader("🩹 Recommended Precautions")
+                    st.subheader("🩹 Recommended First Aid")
                     for p_col in ['Precaution_1', 'Precaution_2', 'Precaution_3', 'Precaution_4']:
-                        st.write(f"- {prec_match[p_col].values[0]}")
+                        val = prec_match[p_col].values[0]
+                        if pd.notna(val):
+                            st.write(f"- {val}")
                 else:
-                    st.warning("General advice: Rest, hydrate, and monitor your health.")
+                    st.warning("General advice: Rest, maintain hydration, and monitor your vitals.")
             
-            st.write(f"**Detected Symptoms:** {', '.join([s.replace('_', ' ') for s in found_symptoms])}")
+            st.write(f"**Symptoms Detected:** {', '.join([s.replace('_', ' ') for s in found_symptoms])}")
         else:
-            st.error("No symptoms recognized. Please refer to the glossary in the sidebar.")
+            st.error("I couldn't identify specific symptoms. Please try rephrasing or use terms from the glossary.")
 
 st.divider()
-st.caption("UHV NLP Final Project - Clinical Decision Support System")
+st.caption("UHV Masters Data Science NLP Final Project - Clinical Decision Support System")
