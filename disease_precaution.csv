@@ -1,0 +1,141 @@
+Disease,Precaution_1,Precaution_2,Precaution_3,Precaution_4
+Common Cold,Stay hydrated,Use a humidifier,Rest and sleep,Consult a doctor if breathing worsens
+Influenza,Consult a healthcare provider,Monitor symptoms,Get adequate rest,Stay hydrated
+Pneumonia,Stay hydrated,Use a humidifier,Rest and sleep,Consult a doctor if breathing worsens
+Asthma,Stay hydrated,Use a humidifier,Rest and sleep,Consult a doctor if breathing worsens
+Tuberculosis,Stay hydrated,Use a humidifier,Rest and sleep,Consult a doctor if breathing worsens
+COVID-19,Stay hydrated,Use a humidifier,Rest and sleep,Consult a doctor if breathing worsens
+Bronchitis,Stay hydrated,Use a humidifier,Rest and sleep,Consult a doctor if breathing worsens
+Strep Throat,Stay hydrated,Use a humidifier,Rest and sleep,Consult a doctor if breathing worsens
+Sinusitis,Stay hydrated,Use a humidifier,Rest and sleep,Consult a doctor if breathing worsens
+Pertussis,Stay hydrated,Use a humidifier,Rest and sleep,Consult a doctor if breathing worsens
+RSV Infection,Consult a healthcare provider,Monitor symptoms,Get adequate rest,Stay hydrated
+Emphysema,Stay hydrated,Use a humidifier,Rest and sleep,Consult a doctor if breathing worsens
+Cystic Fibrosis,Stay hydrated,Use a humidifier,Rest and sleep,Consult a doctor if breathing worsens
+Laryngitis,Stay hydrated,Use a humidifier,Rest and sleep,Consult a doctor if breathing worsens
+Tonsillitis,Stay hydrated,Use a humidifier,Rest and sleep,Consult a doctor if breathing worsens
+Hay Fever,Stay hydrated,Use a humidifier,Rest and sleep,Consult a doctor if breathing worsens
+Sarcoidosis,Stay hydrated,Use a humidifier,Rest and sleep,Consult a doctor if breathing worsens
+Pulmonary Embolism,Stay hydrated,Use a humidifier,Rest and sleep,Consult a doctor if breathing worsens
+Sleep Apnea,Stay hydrated,Use a humidifier,Rest and sleep,Consult a doctor if breathing worsens
+Legionnaires Disease,Consult a healthcare provider,Monitor symptoms,Get adequate rest,Stay hydrated
+Hypertension,Seek emergency care,Stay calm and sit down,Monitor blood pressure,Follow prescribed medication
+Coronary Artery Disease,Consult a healthcare provider,Monitor symptoms,Get adequate rest,Stay hydrated
+Heart Attack,Seek emergency care,Stay calm and sit down,Monitor blood pressure,Follow prescribed medication
+Stroke,Seek emergency care,Stay calm and sit down,Monitor blood pressure,Follow prescribed medication
+Heart Failure,Seek emergency care,Stay calm and sit down,Monitor blood pressure,Follow prescribed medication
+Atrial Fibrillation,Seek emergency care,Stay calm and sit down,Monitor blood pressure,Follow prescribed medication
+Anemia,Seek emergency care,Stay calm and sit down,Monitor blood pressure,Follow prescribed medication
+Iron Deficiency,Seek emergency care,Stay calm and sit down,Monitor blood pressure,Follow prescribed medication
+High Cholesterol,Seek emergency care,Stay calm and sit down,Monitor blood pressure,Follow prescribed medication
+Aneurysm,Seek emergency care,Stay calm and sit down,Monitor blood pressure,Follow prescribed medication
+Deep Vein Thrombosis,Seek emergency care,Stay calm and sit down,Monitor blood pressure,Follow prescribed medication
+Leukemia,Seek emergency care,Stay calm and sit down,Monitor blood pressure,Follow prescribed medication
+Hemophilia,Seek emergency care,Stay calm and sit down,Monitor blood pressure,Follow prescribed medication
+Sickle Cell Disease,Seek emergency care,Stay calm and sit down,Monitor blood pressure,Follow prescribed medication
+Varicose Veins,Seek emergency care,Stay calm and sit down,Monitor blood pressure,Follow prescribed medication
+Aortic Stenosis,Seek emergency care,Stay calm and sit down,Monitor blood pressure,Follow prescribed medication
+Pericarditis,Seek emergency care,Stay calm and sit down,Monitor blood pressure,Follow prescribed medication
+Bradycardia,Seek emergency care,Stay calm and sit down,Monitor blood pressure,Follow prescribed medication
+Tachycardia,Seek emergency care,Stay calm and sit down,Monitor blood pressure,Follow prescribed medication
+Raynaud Syndrome,Consult a healthcare provider,Monitor symptoms,Get adequate rest,Stay hydrated
+Diabetes Type 1,Eat small frequent meals,Avoid spicy or fatty foods,Drink plenty of water,Maintain healthy weight
+Diabetes Type 2,Eat small frequent meals,Avoid spicy or fatty foods,Drink plenty of water,Maintain healthy weight
+GERD,Eat small frequent meals,Avoid spicy or fatty foods,Drink plenty of water,Maintain healthy weight
+Irritable Bowel Syndrome,Consult a healthcare provider,Monitor symptoms,Get adequate rest,Stay hydrated
+Celiac Disease,Eat small frequent meals,Avoid spicy or fatty foods,Drink plenty of water,Maintain healthy weight
+Crohn Disease,Consult a healthcare provider,Monitor symptoms,Get adequate rest,Stay hydrated
+Ulcerative Colitis,Eat small frequent meals,Avoid spicy or fatty foods,Drink plenty of water,Maintain healthy weight
+Gallstones,Eat small frequent meals,Avoid spicy or fatty foods,Drink plenty of water,Maintain healthy weight
+Gastritis,Eat small frequent meals,Avoid spicy or fatty foods,Drink plenty of water,Maintain healthy weight
+Gastroenteritis,Eat small frequent meals,Avoid spicy or fatty foods,Drink plenty of water,Maintain healthy weight
+Hepatitis A,Eat small frequent meals,Avoid spicy or fatty foods,Drink plenty of water,Maintain healthy weight
+Hepatitis B,Eat small frequent meals,Avoid spicy or fatty foods,Drink plenty of water,Maintain healthy weight
+Hepatitis C,Eat small frequent meals,Avoid spicy or fatty foods,Drink plenty of water,Maintain healthy weight
+Cirrhosis,Eat small frequent meals,Avoid spicy or fatty foods,Drink plenty of water,Maintain healthy weight
+Lactose Intolerance,Eat small frequent meals,Avoid spicy or fatty foods,Drink plenty of water,Maintain healthy weight
+Pancreatitis,Eat small frequent meals,Avoid spicy or fatty foods,Drink plenty of water,Maintain healthy weight
+Peptic Ulcer,Eat small frequent meals,Avoid spicy or fatty foods,Drink plenty of water,Maintain healthy weight
+Diverticulitis,Eat small frequent meals,Avoid spicy or fatty foods,Drink plenty of water,Maintain healthy weight
+Appendicitis,Eat small frequent meals,Avoid spicy or fatty foods,Drink plenty of water,Maintain healthy weight
+Hemorrhoids,Eat small frequent meals,Avoid spicy or fatty foods,Drink plenty of water,Maintain healthy weight
+Alzheimers Disease,Consult a healthcare provider,Monitor symptoms,Get adequate rest,Stay hydrated
+Parkinsons Disease,Consult a healthcare provider,Monitor symptoms,Get adequate rest,Stay hydrated
+Multiple Sclerosis,Rest in a quiet room,Avoid bright lights,Manage stress levels,Follow up with a specialist
+Epilepsy,Rest in a quiet room,Avoid bright lights,Manage stress levels,Follow up with a specialist
+Migraine,Rest in a quiet room,Avoid bright lights,Manage stress levels,Follow up with a specialist
+Generalized Anxiety Disorder,Rest in a quiet room,Avoid bright lights,Manage stress levels,Follow up with a specialist
+Depression,Rest in a quiet room,Avoid bright lights,Manage stress levels,Follow up with a specialist
+Bipolar Disorder,Rest in a quiet room,Avoid bright lights,Manage stress levels,Follow up with a specialist
+Schizophrenia,Rest in a quiet room,Avoid bright lights,Manage stress levels,Follow up with a specialist
+Dementia,Rest in a quiet room,Avoid bright lights,Manage stress levels,Follow up with a specialist
+ADHD,Rest in a quiet room,Avoid bright lights,Manage stress levels,Follow up with a specialist
+Autism Spectrum Disorder,Rest in a quiet room,Avoid bright lights,Manage stress levels,Follow up with a specialist
+Obsessive Compulsive Disorder,Consult a healthcare provider,Monitor symptoms,Get adequate rest,Stay hydrated
+PTSD,Rest in a quiet room,Avoid bright lights,Manage stress levels,Follow up with a specialist
+Bells Palsy,Consult a healthcare provider,Monitor symptoms,Get adequate rest,Stay hydrated
+Restless Legs Syndrome,Rest in a quiet room,Avoid bright lights,Manage stress levels,Follow up with a specialist
+Huntingtons Disease,Consult a healthcare provider,Monitor symptoms,Get adequate rest,Stay hydrated
+Narcolepsy,Rest in a quiet room,Avoid bright lights,Manage stress levels,Follow up with a specialist
+Vertigo Disorder,Consult a healthcare provider,Monitor symptoms,Get adequate rest,Stay hydrated
+Hydrocephalus,Rest in a quiet room,Avoid bright lights,Manage stress levels,Follow up with a specialist
+Osteoarthritis,Apply warm/cold compress,Light exercise/stretching,Maintain good posture,Consult a physiotherapist
+Rheumatoid Arthritis,Apply warm/cold compress,Light exercise/stretching,Maintain good posture,Consult a physiotherapist
+Osteoporosis,Apply warm/cold compress,Light exercise/stretching,Maintain good posture,Consult a physiotherapist
+Lupus,Apply warm/cold compress,Light exercise/stretching,Maintain good posture,Consult a physiotherapist
+Fibromyalgia,Apply warm/cold compress,Light exercise/stretching,Maintain good posture,Consult a physiotherapist
+Gout,Apply warm/cold compress,Light exercise/stretching,Maintain good posture,Consult a physiotherapist
+Chronic Back Pain,Consult a healthcare provider,Monitor symptoms,Get adequate rest,Stay hydrated
+Scoliosis,Apply warm/cold compress,Light exercise/stretching,Maintain good posture,Consult a physiotherapist
+Bursitis,Apply warm/cold compress,Light exercise/stretching,Maintain good posture,Consult a physiotherapist
+Acne,Apply warm/cold compress,Light exercise/stretching,Maintain good posture,Consult a physiotherapist
+Eczema,Apply warm/cold compress,Light exercise/stretching,Maintain good posture,Consult a physiotherapist
+Psoriasis,Apply warm/cold compress,Light exercise/stretching,Maintain good posture,Consult a physiotherapist
+Hives,Apply warm/cold compress,Light exercise/stretching,Maintain good posture,Consult a physiotherapist
+Rosacea,Apply warm/cold compress,Light exercise/stretching,Maintain good posture,Consult a physiotherapist
+Alopecia Areata,Apply warm/cold compress,Light exercise/stretching,Maintain good posture,Consult a physiotherapist
+Vitiligo,Apply warm/cold compress,Light exercise/stretching,Maintain good posture,Consult a physiotherapist
+Shingles,Apply warm/cold compress,Light exercise/stretching,Maintain good posture,Consult a physiotherapist
+Impetigo,Apply warm/cold compress,Light exercise/stretching,Maintain good posture,Consult a physiotherapist
+Scabies,Apply warm/cold compress,Light exercise/stretching,Maintain good posture,Consult a physiotherapist
+Ringworm,Apply warm/cold compress,Light exercise/stretching,Maintain good posture,Consult a physiotherapist
+Hypothyroidism,Regular blood checks,Stick to a balanced diet,Proper medication timing,Monitor specific symptoms
+Hyperthyroidism,Regular blood checks,Stick to a balanced diet,Proper medication timing,Monitor specific symptoms
+Kidney Stones,Regular blood checks,Stick to a balanced diet,Proper medication timing,Monitor specific symptoms
+Urinary Tract Infection,Consult a healthcare provider,Monitor symptoms,Get adequate rest,Stay hydrated
+PCOS,Regular blood checks,Stick to a balanced diet,Proper medication timing,Monitor specific symptoms
+Endometriosis,Regular blood checks,Stick to a balanced diet,Proper medication timing,Monitor specific symptoms
+Erectile Dysfunction,Regular blood checks,Stick to a balanced diet,Proper medication timing,Monitor specific symptoms
+Benign Prostatic Hyperplasia,Regular blood checks,Stick to a balanced diet,Proper medication timing,Monitor specific symptoms
+Cushings Syndrome,Consult a healthcare provider,Monitor symptoms,Get adequate rest,Stay hydrated
+Addisons Disease,Consult a healthcare provider,Monitor symptoms,Get adequate rest,Stay hydrated
+Goiter,Regular blood checks,Stick to a balanced diet,Proper medication timing,Monitor specific symptoms
+Bladder Cancer,Regular blood checks,Stick to a balanced diet,Proper medication timing,Monitor specific symptoms
+Kidney Failure,Regular blood checks,Stick to a balanced diet,Proper medication timing,Monitor specific symptoms
+Infertility Disorder,Consult a healthcare provider,Monitor symptoms,Get adequate rest,Stay hydrated
+Pelvic Inflammatory Disease,Consult a healthcare provider,Monitor symptoms,Get adequate rest,Stay hydrated
+Prostate Cancer,Regular blood checks,Stick to a balanced diet,Proper medication timing,Monitor specific symptoms
+Testicular Cancer,Regular blood checks,Stick to a balanced diet,Proper medication timing,Monitor specific symptoms
+Ovarian Cancer,Regular blood checks,Stick to a balanced diet,Proper medication timing,Monitor specific symptoms
+Cystitis,Regular blood checks,Stick to a balanced diet,Proper medication timing,Monitor specific symptoms
+Urethritis,Regular blood checks,Stick to a balanced diet,Proper medication timing,Monitor specific symptoms
+Glaucoma,Avoid eye/ear strain,Use protective gear,Rest in a comfortable environment,Hydrate and rest
+Cataracts,Avoid eye/ear strain,Use protective gear,Rest in a comfortable environment,Hydrate and rest
+Macular Degeneration,Avoid eye/ear strain,Use protective gear,Rest in a comfortable environment,Hydrate and rest
+Conjunctivitis,Avoid eye/ear strain,Use protective gear,Rest in a comfortable environment,Hydrate and rest
+Tinnitus,Avoid eye/ear strain,Use protective gear,Rest in a comfortable environment,Hydrate and rest
+Hearing Loss Disorder,Consult a healthcare provider,Monitor symptoms,Get adequate rest,Stay hydrated
+Motion Sickness,Avoid eye/ear strain,Use protective gear,Rest in a comfortable environment,Hydrate and rest
+Insomnia Disorder,Consult a healthcare provider,Monitor symptoms,Get adequate rest,Stay hydrated
+Chronic Fatigue Syndrome,Avoid eye/ear strain,Use protective gear,Rest in a comfortable environment,Hydrate and rest
+Heatstroke,Avoid eye/ear strain,Use protective gear,Rest in a comfortable environment,Hydrate and rest
+Hypothermia,Avoid eye/ear strain,Use protective gear,Rest in a comfortable environment,Hydrate and rest
+Dehydration,Avoid eye/ear strain,Use protective gear,Rest in a comfortable environment,Hydrate and rest
+Common Warts,Consult a healthcare provider,Monitor symptoms,Get adequate rest,Stay hydrated
+Chickenpox,Avoid eye/ear strain,Use protective gear,Rest in a comfortable environment,Hydrate and rest
+Measles,Avoid eye/ear strain,Use protective gear,Rest in a comfortable environment,Hydrate and rest
+Mumps,Avoid eye/ear strain,Use protective gear,Rest in a comfortable environment,Hydrate and rest
+Rubella,Avoid eye/ear strain,Use protective gear,Rest in a comfortable environment,Hydrate and rest
+Mononucleosis,Avoid eye/ear strain,Use protective gear,Rest in a comfortable environment,Hydrate and rest
+Lyme Disease,Avoid eye/ear strain,Use protective gear,Rest in a comfortable environment,Hydrate and rest
+Malaria,Avoid eye/ear strain,Use protective gear,Rest in a comfortable environment,Hydrate and rest
