@@ -10,7 +10,7 @@ st.set_page_config(page_title="Advanced Healthcare AI", page_icon="🩺", layout
 # --- RELATIVE PATH LOGIC ---
 # This looks at where this file is (notebook2), goes up one level, and finds the 'data' folder.
 # This is the "secret ingredient" for making it work on the web.
-base_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
+base_path = os.path.dirname(__file__)
 
 @st.cache_resource
 def load_and_train():
