@@ -15,10 +15,10 @@ base_path = os.path.dirname(__file__)
 @st.cache_resource
 def load_and_train():
     # 1. Load the 4 healthcare files from the data folder
-    df = pd.read_csv(os.path.join(base_path, "realistic_healthcare_symptom_dataset.csv"))
-    desc_df = pd.read_csv(os.path.join(base_path, "disease_info.csv"))
-    prec_df = pd.read_csv(os.path.join(base_path, "disease_precaution.csv"))
-    severity_df = pd.read_csv(os.path.join(base_path, "new_symptom_severity.csv"))
+    df = pd.read_csv(os.path.join(base_path, "data", "realistic_healthcare_symptom_dataset.csv"))
+    desc_df = pd.read_csv(os.path.join(base_path, "data", "disease_info.csv"))
+    prec_df = pd.read_csv(os.path.join(base_path, "data", "disease_precaution.csv"))
+    severity_df = pd.read_csv(os.path.join(base_path, "data", "new_symptom_severity.csv"))
     
     # 2. Prepare Training Data
     X = df.drop('Disease', axis=1)
