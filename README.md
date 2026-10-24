@@ -1,38 +1,35 @@
-# Healthcare-Diagnostic-AI
-Clinical Diagnostic AI System 🩺
-UHV Master's in Data Science NLP - Final Project
+# Healthcare-Diagnostic-AI: Clinical Decision Support System
 
-# Project Overview
-This project is an advanced healthcare decision-support tool that uses Machine Learning to predict potential medical conditions based on natural language symptom descriptions. The system recognizes 140 different diseases and 175 unique symptoms, providing clinical descriptions and first-aid recommendations for each.
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
+[![Framework](https://img.shields.io/badge/UI-Streamlit-FF4B4B.svg)](https://streamlit.io/)
+[![Machine Learning](https://img.shields.io/badge/Model-Random%20Forest-orange.svg)](https://scikit-learn.org/)
 
-# Key Features
-Natural Language Processing: Extracts clinical symptoms from messy user text.
+An interactive clinical decision-support system (CDSS) designed to evaluate natural language patient symptom inputs, estimate condition probabilities, flag clinical severity tiers, and provide triage precautions.
 
-Random Forest Classifier: A high-precision AI model trained on a custom healthcare dataset.
+---
 
-Severity Analysis: Automatically flags life-threatening symptom patterns (e.g., chest pain or difficulty breathing).
+## Executive Overview
+Triage bottlenecks and delayed diagnostic escalation present persistent risks in acute care intake. This system processes free-text patient symptom reports, extracts clinical entities, maps them against symptom vectors, and deploys a multi-class Random Forest classifier trained on 140 diseases and 175 distinct symptoms.
 
-Clinical Knowledge Base: Integrated database for disease descriptions and precautions.
+### Core Capabilities
+* **Clinical Symptom Ingestion:** Extracts and standardizes symptoms from unstructured descriptive phrases.
+* **Predictive Diagnosis:** Ranks differential diagnostic probabilities using a multi-class Random Forest architecture.
+* **Acuity & Severity Triage:** Incorporates structured symptom severity weights to alert for high-risk presentations (e.g., cardiopulmonary distress indicators).
+* **Precautionary Decision Support:** Surfaces structured precautions and clinical background data aligned with differential predictions.
 
-# Project Structure
-/data: Contains the knowledge base (Training dataset, Severity weights, Disease Info, and Precautions).
+---
 
-/notebook2: Contains the application logic (final_project.py) and environment setup (requirements.txt).
+## System Architecture
 
-# Technology Stack
-Language: Python 3.x
-
-Web Framework: Streamlit
-
-Machine Learning: Scikit-Learn (Random Forest)
-
-Data Handling: Pandas
-
-NLP: SpaCy (en_core_web_sm)
-
-# How to Run Locally
-Clone the repository.
-
-Install dependencies: pip install -r notebook2/requirements.txt
-
-Run the app: streamlit run notebook2/final_project.py
+```text
+Healthcare-Diagnostic-AI/
+│
+├── data/
+│   ├── disease_info.csv                       # Clinical disease descriptions
+│   ├── disease_precaution.csv                 # Triage steps and care guidelines
+│   ├── new_symptom_severity.csv               # Weighted acuity scoring
+│   └── realistic_healthcare_symptom_dataset.csv # Primary training dataset
+│
+├── final_project.py                           # Core Streamlit app & ML pipeline
+├── requirements.txt                           # Verified dependency specifications
+└── README.md                                  # Technical documentation
